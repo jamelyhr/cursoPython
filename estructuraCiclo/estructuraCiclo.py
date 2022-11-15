@@ -131,17 +131,36 @@
     #(nombre)--que la funsion esta recibiendoun parametro
     #(edad,nombre)
 #4.simpre la funsion tine que retomar untimmo de dato
-from sqlite3 import DateFromTiks
+# from sqlite3 import DateFromTiks
 
 
-def saludo(nombre):
-    respuesta=f'hola como estas{nombre}'
-    return respuesta
+# def saludo(nombre):
+#     respuesta=f'hola como estas{nombre}'
+#     return respuesta
 
-    #como uso
-    arrayamigos=['ronlad','claudio','adriel','diego']
-    for amigo in range(0,len(arrayamigos)):
-        print(saludo(arrayamigos[amigos]))
+#     #como uso
+#     arrayamigos=['ronlad','claudio','adriel','diego']
+#     for amigo in range(0,len(arrayamigos)):
+#         print(saludo(arrayamigos[amigos]))
 
-        
+
+#FUNSIONES CARPETA
+def operaciones(num1,num2,operador):
+  if operador=='suma':
+     total=num1+num2
+  if operador=='resta':
+     total=num1-num2
+  if operador=='por':
+     total=num1*num2
+  if operador=='entre':
+     total=num1/num2
+  return total  
+
+#llamando la funsion
+respuesta=operaciones(10,5,'suma')
+respuesta2=operaciones(200,44,'resta')
+print(f'la suma es {respuesta}')
+print(f'la resta es {respuesta}')
+
+  
         
